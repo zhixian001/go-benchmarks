@@ -22,4 +22,6 @@ tester.BenchmarkFunctions(&tests, 100, true)
 
 ```bash
 go build -compiler=gccgo -gccgoflags="-O3 -march=native -ffast-math"
+go build -compiler=gccgo -gccgoflags="-O3 -march=core-avx2 -ffast-math"
+go build -compiler=gccgo -gccgoflags="-O3 -march=haswell -ffast-math"
 ```

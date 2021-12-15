@@ -13,7 +13,7 @@ tests["Test B"] = &tester.TestEntry{
   Function: func() { myFuncB(argA, argB) },
 }
 
-tester.BenchmarkFunctions(&tests, 100, true)
+tester.BenchmarkFunctions(&tests, 100, true, true)
 ```
 
 ## Useful Commands

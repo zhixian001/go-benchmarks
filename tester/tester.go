@@ -57,7 +57,8 @@ func BenchmarkFunctions(tests *map[string]*TestEntry, trialCount int, ignoreFirs
 
 		avgDuration, _ := time.ParseDuration(fmt.Sprintf("%fns", avg))
 
-		testStats += fmt.Sprintf("(avg: %s, ", avgDuration)
+		testStats += fmt.Sprintf("(total: %s, ", sum)
+		testStats += fmt.Sprintf("avg: %s, ", avgDuration)
 
 		var stddevHelper float64 = 0.0
 
